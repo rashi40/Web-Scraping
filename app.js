@@ -55,7 +55,7 @@ app.get('/results', function(req, res){
 	sum=(sum/i).toFixed(2);
 		console.log(sum+" "+p);
  data.push(sum);
-	writeStream.write(p+","+sum+'\n');
+	writeStream.write(p+","+"$"+sum+'\n');
 }
 	 );
 		if(data !== "")	
